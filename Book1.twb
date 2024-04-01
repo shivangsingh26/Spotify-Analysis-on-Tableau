@@ -1,0 +1,3232 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0308.0326                               -->
+<workbook original-version='18.1' source-build='2024.1.1 (20241.24.0308.0326)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <SavingAnalyticObjects />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Cut off Category 2' datatype='real' name='[Cut off Category 1 (copy)_718042668424749060]' param-domain-type='range' role='measure' type='quantitative' value='0.96'>
+        <calculation class='tableau' formula='0.96' />
+        <range granularity='0.01' max='1.0' min='0.0' />
+      </column>
+      <column alias='Energy' caption='Select Category 1' datatype='integer' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='3'>
+        <calculation class='tableau' formula='3' />
+        <aliases>
+          <alias key='1' value='Acousticness' />
+          <alias key='2' value='Danceability' />
+          <alias key='3' value='Energy' />
+          <alias key='4' value='Instrumental' />
+          <alias key='5' value='Liveness' />
+          <alias key='6' value='Loudness' />
+          <alias key='7' value='Speechness' />
+          <alias key='8' value='Tempo' />
+          <alias key='9' value='Time Signature' />
+        </aliases>
+        <members>
+          <member alias='Acousticness' value='1' />
+          <member alias='Danceability' value='2' />
+          <member alias='Energy' value='3' />
+          <member alias='Instrumental' value='4' />
+          <member alias='Liveness' value='5' />
+          <member alias='Loudness' value='6' />
+          <member alias='Speechness' value='7' />
+          <member alias='Tempo' value='8' />
+          <member alias='Time Signature' value='9' />
+        </members>
+      </column>
+      <column caption='Cut off Category 1' datatype='real' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='0.15'>
+        <calculation class='tableau' formula='0.15' />
+        <range granularity='0.01' max='1.0' min='0.0' />
+      </column>
+      <column alias='Danceability' caption='Select Category 2' datatype='integer' name='[Select Category 1 (copy)_718042668422918145]' param-domain-type='list' role='measure' type='quantitative' value='2'>
+        <calculation class='tableau' formula='2' />
+        <aliases>
+          <alias key='1' value='Acousticness' />
+          <alias key='2' value='Danceability' />
+          <alias key='3' value='Energy' />
+          <alias key='4' value='Instrumental' />
+          <alias key='5' value='Liveness' />
+          <alias key='6' value='Loudness' />
+          <alias key='7' value='Speechness' />
+          <alias key='8' value='Tempo' />
+          <alias key='9' value='Time Signature' />
+        </aliases>
+        <members>
+          <member alias='Acousticness' value='1' />
+          <member alias='Danceability' value='2' />
+          <member alias='Energy' value='3' />
+          <member alias='Instrumental' value='4' />
+          <member alias='Liveness' value='5' />
+          <member alias='Loudness' value='6' />
+          <member alias='Speechness' value='7' />
+          <member alias='Tempo' value='8' />
+          <member alias='Time Signature' value='9' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='Spotify Dataset (2289898-Spotify_Dataset)' inline='true' name='federated.1qx3yoq1qevzwo1d7hjty15vopud' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='2289898-Spotify_Dataset' name='excel-direct.1pgbror021vdtm177bol80ifgoqi'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ssnfs/Desktop/Projects/Spotify Analytics/2289898-Spotify_Dataset.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1pgbror021vdtm177bol80ifgoqi' name='Spotify Dataset' table='[&apos;Spotify Dataset$&apos;]' type='table'>
+          <columns gridOrigin='A1:Q2018:no:A1:Q2018:0' header='yes' outcome='2'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='real' name='Acousticness' ordinal='1' />
+            <column datatype='real' name='Danceability' ordinal='2' />
+            <column datatype='integer' name='Duration_ms' ordinal='3' />
+            <column datatype='real' name='Energy' ordinal='4' />
+            <column datatype='real' name='Instrumental' ordinal='5' />
+            <column datatype='integer' name='Key' ordinal='6' />
+            <column datatype='real' name='Liveness' ordinal='7' />
+            <column datatype='real' name='Loudness' ordinal='8' />
+            <column datatype='integer' name='Mode' ordinal='9' />
+            <column datatype='real' name='Speechless' ordinal='10' />
+            <column datatype='real' name='Tempo' ordinal='11' />
+            <column datatype='integer' name='Time_Signature' ordinal='12' />
+            <column datatype='real' name='Valence' ordinal='13' />
+            <column datatype='integer' name='Target' ordinal='14' />
+            <column datatype='string' name='Song_title' ordinal='15' />
+            <column datatype='string' name='Artist' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1pgbror021vdtm177bol80ifgoqi' name='Spotify Dataset' table='[&apos;Spotify Dataset$&apos;]' type='table'>
+          <columns gridOrigin='A1:Q2018:no:A1:Q2018:0' header='yes' outcome='2'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='real' name='Acousticness' ordinal='1' />
+            <column datatype='real' name='Danceability' ordinal='2' />
+            <column datatype='integer' name='Duration_ms' ordinal='3' />
+            <column datatype='real' name='Energy' ordinal='4' />
+            <column datatype='real' name='Instrumental' ordinal='5' />
+            <column datatype='integer' name='Key' ordinal='6' />
+            <column datatype='real' name='Liveness' ordinal='7' />
+            <column datatype='real' name='Loudness' ordinal='8' />
+            <column datatype='integer' name='Mode' ordinal='9' />
+            <column datatype='real' name='Speechless' ordinal='10' />
+            <column datatype='real' name='Tempo' ordinal='11' />
+            <column datatype='integer' name='Time_Signature' ordinal='12' />
+            <column datatype='real' name='Valence' ordinal='13' />
+            <column datatype='integer' name='Target' ordinal='14' />
+            <column datatype='string' name='Song_title' ordinal='15' />
+            <column datatype='string' name='Artist' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Q2018:no:A1:Q2018:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Acousticness</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Acousticness]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Acousticness</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Danceability</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Danceability]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Danceability</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration_ms</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Duration_ms]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Duration_ms</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Energy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Energy]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Energy</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Instrumental</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Instrumental]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Instrumental</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Key</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Key]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Key</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Liveness</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Liveness]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Liveness</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loudness</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Loudness]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Loudness</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mode]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Mode</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Speechless</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Speechless]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Speechless</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tempo</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tempo]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Tempo</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time_Signature</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Time_Signature]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Time_Signature</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Valence</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Valence]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Valence</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Target]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Target</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Song_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Song_title]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Song_title</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Artist</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Artist]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Artist</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Duration ms' datatype='integer' name='[Duration_ms]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Key]' role='dimension' type='ordinal' />
+      <column caption='Song title' datatype='string' name='[Song_title]' role='dimension' type='nominal' />
+      <column caption='Time Signature' datatype='integer' name='[Time_Signature]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Spotify Dataset' datatype='table' name='[__tableau_internal_object_id__].[Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Spotify Dataset' id='Spotify Dataset_D6B3AFC5A09648C088D20F06C0D21703'>
+            <properties context=''>
+              <relation connection='excel-direct.1pgbror021vdtm177bol80ifgoqi' name='Spotify Dataset' table='[&apos;Spotify Dataset$&apos;]' type='table'>
+                <columns gridOrigin='A1:Q2018:no:A1:Q2018:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='real' name='Acousticness' ordinal='1' />
+                  <column datatype='real' name='Danceability' ordinal='2' />
+                  <column datatype='integer' name='Duration_ms' ordinal='3' />
+                  <column datatype='real' name='Energy' ordinal='4' />
+                  <column datatype='real' name='Instrumental' ordinal='5' />
+                  <column datatype='integer' name='Key' ordinal='6' />
+                  <column datatype='real' name='Liveness' ordinal='7' />
+                  <column datatype='real' name='Loudness' ordinal='8' />
+                  <column datatype='integer' name='Mode' ordinal='9' />
+                  <column datatype='real' name='Speechless' ordinal='10' />
+                  <column datatype='real' name='Tempo' ordinal='11' />
+                  <column datatype='integer' name='Time_Signature' ordinal='12' />
+                  <column datatype='real' name='Valence' ordinal='13' />
+                  <column datatype='integer' name='Target' ordinal='14' />
+                  <column datatype='string' name='Song_title' ordinal='15' />
+                  <column datatype='string' name='Artist' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Spotify Dataset (2289898-Spotify_Dataset) (2)' inline='true' name='federated.1pmx3jm0kou1cr102lvtl11xficx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='2289898-Spotify_Dataset' name='excel-direct.14grtxl0hjpxj4115jhcp1ejur50'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/ssnfs/Desktop/Projects/Spotify Analytics/2289898-Spotify_Dataset.xls' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.14grtxl0hjpxj4115jhcp1ejur50' name='Spotify Dataset' table='[&apos;Spotify Dataset$&apos;]' type='table'>
+          <columns gridOrigin='A1:Q2018:no:A1:Q2018:0' header='yes' outcome='2'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='real' name='Acousticness' ordinal='1' />
+            <column datatype='real' name='Danceability' ordinal='2' />
+            <column datatype='integer' name='Duration_ms' ordinal='3' />
+            <column datatype='real' name='Energy' ordinal='4' />
+            <column datatype='real' name='Instrumental' ordinal='5' />
+            <column datatype='integer' name='Key' ordinal='6' />
+            <column datatype='real' name='Liveness' ordinal='7' />
+            <column datatype='real' name='Loudness' ordinal='8' />
+            <column datatype='integer' name='Mode' ordinal='9' />
+            <column datatype='real' name='Speechless' ordinal='10' />
+            <column datatype='real' name='Tempo' ordinal='11' />
+            <column datatype='integer' name='Time_Signature' ordinal='12' />
+            <column datatype='real' name='Valence' ordinal='13' />
+            <column datatype='integer' name='Target' ordinal='14' />
+            <column datatype='string' name='Song_title' ordinal='15' />
+            <column datatype='string' name='Artist' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.14grtxl0hjpxj4115jhcp1ejur50' name='Spotify Dataset' table='[&apos;Spotify Dataset$&apos;]' type='table'>
+          <columns gridOrigin='A1:Q2018:no:A1:Q2018:0' header='yes' outcome='2'>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='real' name='Acousticness' ordinal='1' />
+            <column datatype='real' name='Danceability' ordinal='2' />
+            <column datatype='integer' name='Duration_ms' ordinal='3' />
+            <column datatype='real' name='Energy' ordinal='4' />
+            <column datatype='real' name='Instrumental' ordinal='5' />
+            <column datatype='integer' name='Key' ordinal='6' />
+            <column datatype='real' name='Liveness' ordinal='7' />
+            <column datatype='real' name='Loudness' ordinal='8' />
+            <column datatype='integer' name='Mode' ordinal='9' />
+            <column datatype='real' name='Speechless' ordinal='10' />
+            <column datatype='real' name='Tempo' ordinal='11' />
+            <column datatype='integer' name='Time_Signature' ordinal='12' />
+            <column datatype='real' name='Valence' ordinal='13' />
+            <column datatype='integer' name='Target' ordinal='14' />
+            <column datatype='string' name='Song_title' ordinal='15' />
+            <column datatype='string' name='Artist' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:Q2018:no:A1:Q2018:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D674873E537347E3BB1942A108E772DA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Acousticness</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Acousticness]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Acousticness</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D674873E537347E3BB1942A108E772DA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Danceability</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Danceability]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Danceability</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D674873E537347E3BB1942A108E772DA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Duration_ms</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Duration_ms]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Duration_ms</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D674873E537347E3BB1942A108E772DA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Energy</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Energy]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Energy</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D674873E537347E3BB1942A108E772DA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Instrumental</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Instrumental]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Instrumental</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D674873E537347E3BB1942A108E772DA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Key</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Key]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Key</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D674873E537347E3BB1942A108E772DA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Liveness</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Liveness]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Liveness</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D674873E537347E3BB1942A108E772DA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Loudness</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Loudness]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Loudness</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D674873E537347E3BB1942A108E772DA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Mode]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Mode</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D674873E537347E3BB1942A108E772DA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Speechless</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Speechless]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Speechless</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D674873E537347E3BB1942A108E772DA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tempo</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Tempo]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Tempo</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D674873E537347E3BB1942A108E772DA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time_Signature</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Time_Signature]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Time_Signature</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D674873E537347E3BB1942A108E772DA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Valence</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Valence]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Valence</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D674873E537347E3BB1942A108E772DA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Target]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Target</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D674873E537347E3BB1942A108E772DA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Song_title</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Song_title]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Song_title</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D674873E537347E3BB1942A108E772DA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Artist</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Artist]</local-name>
+            <parent-name>[Spotify Dataset]</parent-name>
+            <remote-alias>Artist</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Spotify Dataset_D674873E537347E3BB1942A108E772DA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Acousticness (bin)' datatype='integer' name='[Acousticness (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-2' formula='[Acousticness]' peg='0' size='0.04' />
+      </column>
+      <column datatype='real' name='[Acousticness]' role='measure' type='quantitative' />
+      <column caption='Number of Records' datatype='integer' name='[Calculation_718042668228530176]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Category1' datatype='real' name='[Calculation_718042668423172098]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE [Parameters].[Parameter 1]&#13;&#10;WHEN 1 THEN [Acousticness]&#13;&#10;WHEN 2 THEN [Danceability]&#13;&#10;WHEN 3 THEN [Energy]&#13;&#10;WHEN 4 THEN [Instrumental]&#13;&#10;WHEN 5 THEN [Liveness]&#13;&#10;WHEN 6 THEN [Loudness]&#13;&#10;WHEN 7 THEN [Speechless]&#13;&#10;WHEN 8 THEN [Tempo]&#13;&#10;WHEN 9 THEN [Time_Signature]&#13;&#10;WHEN 10 THEN [Valence]&#13;&#10;END' />
+      </column>
+      <column caption='In out Cut off Category' datatype='string' name='[Calculation_718042668424962053]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Calculation_718042668423172098] &gt;= [Parameters].[Parameter 2] AND [Category1 (copy)_718042668423905283] &gt;= [Parameters].[Cut off Category 1 (copy)_718042668424749060]&#13;&#10;THEN &apos;Y&apos;&#13;&#10;ELSE &apos;N&apos;&#13;&#10;END' />
+      </column>
+      <column caption='Count Artist' datatype='integer' name='[Calculation_718042668425445382]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='{FIXED [Artist],[Calculation_718042668424962053] = &apos;Y&apos; : COUNT([Artist])}' />
+      </column>
+      <column caption='Category 2' datatype='real' name='[Category1 (copy)_718042668423905283]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE [Parameters].[Select Category 1 (copy)_718042668422918145]&#13;&#10;WHEN 1 THEN [Acousticness]&#13;&#10;WHEN 2 THEN [Danceability]&#13;&#10;WHEN 3 THEN [Energy]&#13;&#10;WHEN 4 THEN [Instrumental]&#13;&#10;WHEN 5 THEN [Liveness]&#13;&#10;WHEN 6 THEN [Loudness]&#13;&#10;WHEN 7 THEN [Speechless]&#13;&#10;WHEN 8 THEN [Tempo]&#13;&#10;WHEN 9 THEN [Time_Signature]&#13;&#10;WHEN 10 THEN [Valence]&#13;&#10;END' />
+      </column>
+      <column caption='Danceability (bin)' datatype='integer' name='[Danceability (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-2' formula='[Danceability]' peg='0' size='0.04' />
+      </column>
+      <column datatype='real' name='[Danceability]' role='measure' type='quantitative' />
+      <column caption='Duration ms' datatype='integer' name='[Duration_ms]' role='measure' type='quantitative' />
+      <column caption='Energy (bin)' datatype='integer' name='[Energy (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-2' formula='[Energy]' peg='0' size='0.04' />
+      </column>
+      <column datatype='real' name='[Energy]' role='measure' type='quantitative' />
+      <column caption='Instrumental (bin)' datatype='integer' name='[Instrumental (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-2' formula='[Instrumental]' peg='0' size='0.04' />
+      </column>
+      <column datatype='real' name='[Instrumental]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Key]' role='dimension' type='ordinal' />
+      <column caption='Liveness (bin)' datatype='integer' name='[Liveness (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-2' formula='[Liveness]' peg='0' size='0.04' />
+      </column>
+      <column datatype='real' name='[Liveness]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Mode]' role='measure' type='quantitative' />
+      <column caption='Song title' datatype='string' name='[Song_title]' role='dimension' type='nominal' />
+      <column caption='Speechless (bin)' datatype='integer' name='[Speechless (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-2' formula='[Speechless]' peg='0' size='0.04' />
+      </column>
+      <column datatype='real' name='[Speechless]' role='measure' type='quantitative' />
+      <column caption='Time Signature' datatype='integer' name='[Time_Signature]' role='measure' type='quantitative' />
+      <column datatype='real' name='[Valence]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Spotify Dataset' datatype='table' name='[__tableau_internal_object_id__].[Spotify Dataset_D674873E537347E3BB1942A108E772DA]' role='measure' type='quantitative' />
+      <column-instance aggregation-param='50' column='[Mode]' derivation='Percentile' name='[prc50:Mode:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Acousticness]' derivation='Sum' name='[sum:Acousticness:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Danceability]' derivation='Sum' name='[sum:Danceability:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Energy]' derivation='Sum' name='[sum:Energy:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Liveness]' derivation='Sum' name='[sum:Liveness:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Valence]' derivation='Sum' name='[sum:Valence:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' _.fcp.SchemaViewerObjectModel.true...common-percentage='0.710726' _.fcp.SchemaViewerObjectModel.true...user-set-layout-v2='true' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.289274' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:AdhocCluster:1:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>8</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='F1' />
+        <field-sort-custom-order field='Acousticness' />
+        <field-sort-custom-order field='Danceability' />
+        <field-sort-custom-order field='Duration_ms' />
+        <field-sort-custom-order field='Energy' />
+        <field-sort-custom-order field='Instrumental' />
+        <field-sort-custom-order field='Key' />
+        <field-sort-custom-order field='Liveness' />
+        <field-sort-custom-order field='Loudness' />
+        <field-sort-custom-order field='Mode' />
+        <field-sort-custom-order field='Speechless' />
+        <field-sort-custom-order field='Tempo' />
+        <field-sort-custom-order field='Time_Signature' />
+        <field-sort-custom-order field='Valence' />
+        <field-sort-custom-order field='Target' />
+        <field-sort-custom-order field='Song_title' />
+        <field-sort-custom-order field='Artist' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field='Calculation_718042668228530176' />
+        <field-sort-custom-order field='Energy (bin)' />
+        <field-sort-custom-order field='Acousticness (bin)' />
+        <field-sort-custom-order field='Liveness (bin)' />
+        <field-sort-custom-order field='Speechless (bin)' />
+        <field-sort-custom-order field='Instrumental (bin)' />
+        <field-sort-custom-order field='Danceability (bin)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Cut off Category 2' datatype='real' name='[Cut off Category 1 (copy)_718042668424749060]' param-domain-type='range' role='measure' type='quantitative' value='0.96'>
+          <calculation class='tableau' formula='0.96' />
+          <range granularity='0.01' max='1.0' min='0.0' />
+        </column>
+        <column alias='Energy' caption='Select Category 1' datatype='integer' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='3'>
+          <calculation class='tableau' formula='3' />
+          <aliases>
+            <alias key='1' value='Acousticness' />
+            <alias key='2' value='Danceability' />
+            <alias key='3' value='Energy' />
+            <alias key='4' value='Instrumental' />
+            <alias key='5' value='Liveness' />
+            <alias key='6' value='Loudness' />
+            <alias key='7' value='Speechness' />
+            <alias key='8' value='Tempo' />
+            <alias key='9' value='Time Signature' />
+          </aliases>
+        </column>
+        <column caption='Cut off Category 1' datatype='real' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='0.15'>
+          <calculation class='tableau' formula='0.15' />
+          <range granularity='0.01' max='1.0' min='0.0' />
+        </column>
+        <column alias='Danceability' caption='Select Category 2' datatype='integer' name='[Select Category 1 (copy)_718042668422918145]' param-domain-type='list' role='measure' type='quantitative' value='2'>
+          <calculation class='tableau' formula='2' />
+          <aliases>
+            <alias key='1' value='Acousticness' />
+            <alias key='2' value='Danceability' />
+            <alias key='3' value='Energy' />
+            <alias key='4' value='Instrumental' />
+            <alias key='5' value='Liveness' />
+            <alias key='6' value='Loudness' />
+            <alias key='7' value='Speechness' />
+            <alias key='8' value='Tempo' />
+            <alias key='9' value='Time Signature' />
+          </aliases>
+        </column>
+      </datasource-dependencies>
+      <analytic-model>
+        <name>
+          <field name='[AnalyticModel:{e2058a78-0892-439f-9c92-743be29786a2}]' />
+        </name>
+        <analytic-model-specifications class='cluster-specifications'>
+          <analysis-fields>
+            <field name='[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Acousticness:qk]' />
+            <field name='[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Danceability:qk]' />
+            <field name='[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Energy:qk]' />
+            <field name='[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Liveness:qk]' />
+            <field name='[federated.1pmx3jm0kou1cr102lvtl11xficx].[prc50:Mode:qk]' />
+            <field name='[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Valence:qk]' />
+          </analysis-fields>
+          <filter-fields />
+          <lod-fields />
+          <number-of-desired-clusters>5</number-of-desired-clusters>
+          <is-dissagregate>false</is-dissagregate>
+        </analytic-model-specifications>
+        <result-fields />
+      </analytic-model>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Spotify Dataset' id='Spotify Dataset_D674873E537347E3BB1942A108E772DA'>
+            <properties context=''>
+              <relation connection='excel-direct.14grtxl0hjpxj4115jhcp1ejur50' name='Spotify Dataset' table='[&apos;Spotify Dataset$&apos;]' type='table'>
+                <columns gridOrigin='A1:Q2018:no:A1:Q2018:0' header='yes' outcome='2'>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='real' name='Acousticness' ordinal='1' />
+                  <column datatype='real' name='Danceability' ordinal='2' />
+                  <column datatype='integer' name='Duration_ms' ordinal='3' />
+                  <column datatype='real' name='Energy' ordinal='4' />
+                  <column datatype='real' name='Instrumental' ordinal='5' />
+                  <column datatype='integer' name='Key' ordinal='6' />
+                  <column datatype='real' name='Liveness' ordinal='7' />
+                  <column datatype='real' name='Loudness' ordinal='8' />
+                  <column datatype='integer' name='Mode' ordinal='9' />
+                  <column datatype='real' name='Speechless' ordinal='10' />
+                  <column datatype='real' name='Tempo' ordinal='11' />
+                  <column datatype='integer' name='Time_Signature' ordinal='12' />
+                  <column datatype='real' name='Valence' ordinal='13' />
+                  <column datatype='integer' name='Target' ordinal='14' />
+                  <column datatype='string' name='Song_title' ordinal='15' />
+                  <column datatype='string' name='Artist' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_6785C328D79D43C8B5E4BE69B8BD9C3D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Clusters' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Acousticness'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Music Acousticness</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Spotify Dataset (2289898-Spotify_Dataset) (2)' name='federated.1pmx3jm0kou1cr102lvtl11xficx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pmx3jm0kou1cr102lvtl11xficx'>
+            <column caption='Acousticness (bin)' datatype='integer' name='[Acousticness (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[Acousticness]' peg='0' size='0.04' />
+            </column>
+            <column datatype='real' name='[Acousticness]' role='measure' type='quantitative' />
+            <column caption='Number of Records' datatype='integer' name='[Calculation_718042668228530176]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Acousticness (bin)]' derivation='None' name='[none:Acousticness (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_718042668228530176]' derivation='Sum' name='[sum:Calculation_718042668228530176:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Calculation_718042668228530176:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Acousticness (bin):ok]' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#01fec7' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Calculation_718042668228530176:qk]</rows>
+        <cols>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Acousticness (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1pmx3jm0kou1cr102lvtl11xficx].[Acousticness (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{CEF965D5-6279-49DF-B768-91591DDA9FBF}' />
+    </worksheet>
+    <worksheet name='Artist Segmentation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Spotify Dataset (2289898-Spotify_Dataset) (2)' name='federated.1pmx3jm0kou1cr102lvtl11xficx' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Cut off Category 2' datatype='real' name='[Cut off Category 1 (copy)_718042668424749060]' param-domain-type='range' role='measure' type='quantitative' value='0.96'>
+              <calculation class='tableau' formula='0.96' />
+              <range granularity='0.01' max='1.0' min='0.0' />
+            </column>
+            <column alias='Energy' caption='Select Category 1' datatype='integer' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='3'>
+              <calculation class='tableau' formula='3' />
+              <aliases>
+                <alias key='1' value='Acousticness' />
+                <alias key='2' value='Danceability' />
+                <alias key='3' value='Energy' />
+                <alias key='4' value='Instrumental' />
+                <alias key='5' value='Liveness' />
+                <alias key='6' value='Loudness' />
+                <alias key='7' value='Speechness' />
+                <alias key='8' value='Tempo' />
+                <alias key='9' value='Time Signature' />
+              </aliases>
+            </column>
+            <column caption='Cut off Category 1' datatype='real' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='0.15'>
+              <calculation class='tableau' formula='0.15' />
+              <range granularity='0.01' max='1.0' min='0.0' />
+            </column>
+            <column alias='Danceability' caption='Select Category 2' datatype='integer' name='[Select Category 1 (copy)_718042668422918145]' param-domain-type='list' role='measure' type='quantitative' value='2'>
+              <calculation class='tableau' formula='2' />
+              <aliases>
+                <alias key='1' value='Acousticness' />
+                <alias key='2' value='Danceability' />
+                <alias key='3' value='Energy' />
+                <alias key='4' value='Instrumental' />
+                <alias key='5' value='Liveness' />
+                <alias key='6' value='Loudness' />
+                <alias key='7' value='Speechness' />
+                <alias key='8' value='Tempo' />
+                <alias key='9' value='Time Signature' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1pmx3jm0kou1cr102lvtl11xficx'>
+            <column datatype='real' name='[Acousticness]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Artist]' role='dimension' type='nominal' />
+            <column caption='Category1' datatype='real' name='[Calculation_718042668423172098]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 1]&#13;&#10;WHEN 1 THEN [Acousticness]&#13;&#10;WHEN 2 THEN [Danceability]&#13;&#10;WHEN 3 THEN [Energy]&#13;&#10;WHEN 4 THEN [Instrumental]&#13;&#10;WHEN 5 THEN [Liveness]&#13;&#10;WHEN 6 THEN [Loudness]&#13;&#10;WHEN 7 THEN [Speechless]&#13;&#10;WHEN 8 THEN [Tempo]&#13;&#10;WHEN 9 THEN [Time_Signature]&#13;&#10;WHEN 10 THEN [Valence]&#13;&#10;END' />
+            </column>
+            <column caption='In out Cut off Category' datatype='string' name='[Calculation_718042668424962053]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF [Calculation_718042668423172098] &gt;= [Parameters].[Parameter 2] AND [Category1 (copy)_718042668423905283] &gt;= [Parameters].[Cut off Category 1 (copy)_718042668424749060]&#13;&#10;THEN &apos;Y&apos;&#13;&#10;ELSE &apos;N&apos;&#13;&#10;END' />
+            </column>
+            <column caption='Count Artist' datatype='integer' name='[Calculation_718042668425445382]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='{FIXED [Artist],[Calculation_718042668424962053] = &apos;Y&apos; : COUNT([Artist])}' />
+            </column>
+            <column caption='Category 2' datatype='real' name='[Category1 (copy)_718042668423905283]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [Parameters].[Select Category 1 (copy)_718042668422918145]&#13;&#10;WHEN 1 THEN [Acousticness]&#13;&#10;WHEN 2 THEN [Danceability]&#13;&#10;WHEN 3 THEN [Energy]&#13;&#10;WHEN 4 THEN [Instrumental]&#13;&#10;WHEN 5 THEN [Liveness]&#13;&#10;WHEN 6 THEN [Loudness]&#13;&#10;WHEN 7 THEN [Speechless]&#13;&#10;WHEN 8 THEN [Tempo]&#13;&#10;WHEN 9 THEN [Time_Signature]&#13;&#10;WHEN 10 THEN [Valence]&#13;&#10;END' />
+            </column>
+            <column datatype='real' name='[Danceability]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Energy]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Instrumental]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Liveness]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Loudness]' role='measure' type='quantitative' />
+            <column caption='Song title' datatype='string' name='[Song_title]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Speechless]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Tempo]' role='measure' type='quantitative' />
+            <column caption='Time Signature' datatype='integer' name='[Time_Signature]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Valence]' role='measure' type='quantitative' />
+            <column-instance column='[Artist]' derivation='None' name='[none:Artist:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_718042668424962053]' derivation='None' name='[none:Calculation_718042668424962053:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_718042668425445382]' derivation='None' name='[none:Calculation_718042668425445382:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Song_title]' derivation='None' name='[none:Song_title:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Calculation_718042668424962053:nk]'>
+            <groupfilter function='member' level='[none:Calculation_718042668424962053:nk]' member='&quot;Y&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Calculation_718042668425445382:qk]' included-values='in-range'>
+            <min>5</min>
+            <max>12</max>
+          </filter>
+          <slices>
+            <column>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Calculation_718042668424962053:nk]</column>
+            <column>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Calculation_718042668425445382:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Artist:nk]' value='25' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#01fec7' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Shape' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Song_title:nk]' />
+              <lod column='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Artist:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/asterisk' />
+                <format attr='size' value='1.3953038454055786' />
+                <format attr='mark-color' value='#b6992d' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Artist:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{88ED4254-E49C-4928-9C6C-CC5A1525BE5F}' />
+    </worksheet>
+    <worksheet name='Danceability'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Spotify Dataset (2289898-Spotify_Dataset) (2)' name='federated.1pmx3jm0kou1cr102lvtl11xficx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pmx3jm0kou1cr102lvtl11xficx'>
+            <column caption='Number of Records' datatype='integer' name='[Calculation_718042668228530176]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Danceability (bin)' datatype='integer' name='[Danceability (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[Danceability]' peg='0' size='0.04' />
+            </column>
+            <column datatype='real' name='[Danceability]' role='measure' type='quantitative' />
+            <column-instance column='[Danceability (bin)]' derivation='None' name='[none:Danceability (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_718042668228530176]' derivation='Sum' name='[sum:Calculation_718042668228530176:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Calculation_718042668228530176:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Danceability (bin):ok]' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#01fec7' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Calculation_718042668228530176:qk]</rows>
+        <cols>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Danceability (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1pmx3jm0kou1cr102lvtl11xficx].[Danceability (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{E2AFAD0B-B289-4646-82A0-34398D2A3642}' />
+    </worksheet>
+    <worksheet name='Instrumental Music'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Spotify Dataset (2289898-Spotify_Dataset) (2)' name='federated.1pmx3jm0kou1cr102lvtl11xficx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pmx3jm0kou1cr102lvtl11xficx'>
+            <column caption='Number of Records' datatype='integer' name='[Calculation_718042668228530176]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Instrumental (bin)' datatype='integer' name='[Instrumental (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[Instrumental]' peg='0' size='0.04' />
+            </column>
+            <column datatype='real' name='[Instrumental]' role='measure' type='quantitative' />
+            <column-instance column='[Instrumental (bin)]' derivation='None' name='[none:Instrumental (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_718042668228530176]' derivation='Sum' name='[sum:Calculation_718042668228530176:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Instrumental (bin):ok]'>
+            <groupfilter function='level-members' level='[none:Instrumental (bin):ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Instrumental (bin):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Calculation_718042668228530176:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Instrumental (bin):ok]' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#01fec7' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Calculation_718042668228530176:qk]</rows>
+        <cols>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Instrumental (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1pmx3jm0kou1cr102lvtl11xficx].[Instrumental (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{F39A3B33-F72B-4D3F-8D74-98C5E9AE04AF}' />
+    </worksheet>
+    <worksheet name='Liveness'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Liveness</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Spotify Dataset (2289898-Spotify_Dataset) (2)' name='federated.1pmx3jm0kou1cr102lvtl11xficx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pmx3jm0kou1cr102lvtl11xficx'>
+            <column caption='Number of Records' datatype='integer' name='[Calculation_718042668228530176]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Liveness (bin)' datatype='integer' name='[Liveness (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[Liveness]' peg='0' size='0.04' />
+            </column>
+            <column datatype='real' name='[Liveness]' role='measure' type='quantitative' />
+            <column-instance column='[Liveness (bin)]' derivation='None' name='[none:Liveness (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_718042668228530176]' derivation='Sum' name='[sum:Calculation_718042668228530176:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='display' class='0' field='[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Calculation_718042668228530176:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Liveness (bin):ok]' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-color' value='#01fec7' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Calculation_718042668228530176:qk]</rows>
+        <cols>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Liveness (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1pmx3jm0kou1cr102lvtl11xficx].[Liveness (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{34ADD731-59C4-41B1-8EE8-530C480807A1}' />
+    </worksheet>
+    <worksheet name='Music Classification'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Music Classification</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Spotify Dataset (2289898-Spotify_Dataset) (2)' name='federated.1pmx3jm0kou1cr102lvtl11xficx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pmx3jm0kou1cr102lvtl11xficx'>
+            <column caption='Number of Records' datatype='integer' name='[Calculation_718042668228530176]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Energy (bin)' datatype='integer' name='[Energy (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[Energy]' peg='0' size='0.04' />
+            </column>
+            <column datatype='real' name='[Energy]' role='measure' type='quantitative' />
+            <column-instance column='[Energy (bin)]' derivation='None' name='[none:Energy (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_718042668228530176]' derivation='Sum' name='[sum:Calculation_718042668228530176:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='display' class='0' field='[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Calculation_718042668228530176:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Energy (bin):ok]' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#01fec7' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Calculation_718042668228530176:qk]</rows>
+        <cols>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Energy (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1pmx3jm0kou1cr102lvtl11xficx].[Energy (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{1B3D1061-06B3-4CAA-8AAD-A8849B44E79B}' />
+    </worksheet>
+    <worksheet name='Preferred Artist'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#ffffff' fontsize='18'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Spotify Dataset (2289898-Spotify_Dataset) (2)' name='federated.1pmx3jm0kou1cr102lvtl11xficx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pmx3jm0kou1cr102lvtl11xficx'>
+            <column datatype='real' name='[Acousticness]' role='measure' type='quantitative' />
+            <column auto-hidden='true' caption='Clusters' datatype='integer' hidden='true' is-adhoc-cluster='true' name='[AdhocCluster:1]' parent-model='[AnalyticModel:{e2058a78-0892-439f-9c92-743be29786a2}]' role='dimension' type='ordinal'>
+              <aliases>
+                <alias key='-1' value='Cluster Outliers' />
+                <alias key='0' value='Not Clustered' />
+                <alias key='1' value='Cluster 1' />
+                <alias key='2' value='Cluster 2' />
+                <alias key='3' value='Cluster 3' />
+                <alias key='4' value='Cluster 4' />
+                <alias key='5' value='Cluster 5' />
+                <alias key='6' value='Cluster 6' />
+                <alias key='7' value='Cluster 7' />
+                <alias key='8' value='Cluster 8' />
+                <alias key='9' value='Cluster 9' />
+                <alias key='10' value='Cluster 10' />
+                <alias key='11' value='Cluster 11' />
+                <alias key='12' value='Cluster 12' />
+                <alias key='13' value='Cluster 13' />
+                <alias key='14' value='Cluster 14' />
+                <alias key='15' value='Cluster 15' />
+                <alias key='16' value='Cluster 16' />
+                <alias key='17' value='Cluster 17' />
+                <alias key='18' value='Cluster 18' />
+                <alias key='19' value='Cluster 19' />
+                <alias key='20' value='Cluster 20' />
+                <alias key='21' value='Cluster 21' />
+                <alias key='22' value='Cluster 22' />
+                <alias key='23' value='Cluster 23' />
+                <alias key='24' value='Cluster 24' />
+                <alias key='25' value='Cluster 25' />
+                <alias key='26' value='Cluster 26' />
+                <alias key='27' value='Cluster 27' />
+                <alias key='28' value='Cluster 28' />
+                <alias key='29' value='Cluster 29' />
+                <alias key='30' value='Cluster 30' />
+                <alias key='31' value='Cluster 31' />
+                <alias key='32' value='Cluster 32' />
+                <alias key='33' value='Cluster 33' />
+                <alias key='34' value='Cluster 34' />
+                <alias key='35' value='Cluster 35' />
+                <alias key='36' value='Cluster 36' />
+                <alias key='37' value='Cluster 37' />
+                <alias key='38' value='Cluster 38' />
+                <alias key='39' value='Cluster 39' />
+                <alias key='40' value='Cluster 40' />
+                <alias key='41' value='Cluster 41' />
+                <alias key='42' value='Cluster 42' />
+                <alias key='43' value='Cluster 43' />
+                <alias key='44' value='Cluster 44' />
+                <alias key='45' value='Cluster 45' />
+                <alias key='46' value='Cluster 46' />
+                <alias key='47' value='Cluster 47' />
+                <alias key='48' value='Cluster 48' />
+                <alias key='49' value='Cluster 49' />
+                <alias key='50' value='Cluster 50' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Artist]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Danceability]' role='measure' type='quantitative' />
+            <column caption='Duration ms' datatype='integer' name='[Duration_ms]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Energy]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Liveness]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Loudness]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Mode]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Valence]' role='measure' type='quantitative' />
+            <column-instance column='[AdhocCluster:1]' derivation='None' is-adhoc-cluster='true' name='[none:AdhocCluster:1:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Artist]' derivation='None' name='[none:Artist:nk]' pivot='key' type='nominal' />
+            <column-instance aggregation-param='50' column='[Mode]' derivation='Percentile' name='[prc50:Mode:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Acousticness]' derivation='Sum' name='[sum:Acousticness:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Danceability]' derivation='Sum' name='[sum:Danceability:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Duration_ms]' derivation='Sum' name='[sum:Duration_ms:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Energy]' derivation='Sum' name='[sum:Energy:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Liveness]' derivation='Sum' name='[sum:Liveness:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Loudness]' derivation='Sum' name='[sum:Loudness:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Valence]' derivation='Sum' name='[sum:Valence:qk]' pivot='key' type='quantitative' />
+            <style>
+              <style-rule element='mark'>
+                <encoding attr='color' field='[none:AdhocCluster:1:ok]' type='palette'>
+                  <map to='#4e79a7'>
+                    <bucket>1</bucket>
+                  </map>
+                  <map to='#59a14f'>
+                    <bucket>5</bucket>
+                  </map>
+                  <map to='#76b7b2'>
+                    <bucket>4</bucket>
+                  </map>
+                  <map to='#9c755f'>
+                    <bucket>9</bucket>
+                  </map>
+                  <map to='#b07aa1'>
+                    <bucket>7</bucket>
+                  </map>
+                  <map to='#bab0ac'>
+                    <bucket>10</bucket>
+                  </map>
+                  <map to='#e15759'>
+                    <bucket>3</bucket>
+                  </map>
+                  <map to='#edc948'>
+                    <bucket>6</bucket>
+                  </map>
+                  <map to='#f28e2b'>
+                    <bucket>2</bucket>
+                  </map>
+                  <map to='#ff9da7'>
+                    <bucket>8</bucket>
+                  </map>
+                </encoding>
+              </style-rule>
+            </style>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:AdhocCluster:1:ok]'>
+            <groupfilter function='level-members' level='[none:AdhocCluster:1:ok]' />
+          </filter>
+          <slices>
+            <column>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:AdhocCluster:1:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Loudness:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Duration_ms:qk]' scope='cols' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <lod column='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Artist:nk]' />
+              <color column='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:AdhocCluster:1:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4392818212509155' />
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-transparency' value='180' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#898989' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Loudness:qk]</rows>
+        <cols>[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Duration_ms:qk]</cols>
+      </table>
+      <simple-id uuid='{0D5E9C7B-E2EC-42FC-AC84-B555EBAC2B7A}' />
+    </worksheet>
+    <worksheet name='Speechiness'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Spotify Dataset (2289898-Spotify_Dataset) (2)' name='federated.1pmx3jm0kou1cr102lvtl11xficx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1pmx3jm0kou1cr102lvtl11xficx'>
+            <column caption='Number of Records' datatype='integer' name='[Calculation_718042668228530176]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Speechless (bin)' datatype='integer' name='[Speechless (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[Speechless]' peg='0' size='0.04' />
+            </column>
+            <column datatype='real' name='[Speechless]' role='measure' type='quantitative' />
+            <column-instance column='[Speechless (bin)]' derivation='None' name='[none:Speechless (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Calculation_718042668228530176]' derivation='Sum' name='[sum:Calculation_718042668228530176:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Calculation_718042668228530176:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Speechless (bin):ok]' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#01fec7' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1pmx3jm0kou1cr102lvtl11xficx].[sum:Calculation_718042668228530176:qk]</rows>
+        <cols>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Speechless (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.1pmx3jm0kou1cr102lvtl11xficx].[Speechless (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{EB1DD17D-331F-45EC-8B30-2B741AB008B8}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#01fec7' fontname='Tableau Bold' fontsize='36'>Spotify</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#b4b4b4' fontname='Tableau Bold' fontsize='24'>Music Classification and Personalisation</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='1000' maxwidth='1500' minheight='1000' minwidth='1500' sizing-mode='fixed' />
+      <datasources>
+        <datasource name='Parameters' />
+        <datasource caption='Spotify Dataset (2289898-Spotify_Dataset) (2)' name='federated.1pmx3jm0kou1cr102lvtl11xficx' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Cut off Category 2' datatype='real' name='[Cut off Category 1 (copy)_718042668424749060]' param-domain-type='range' role='measure' type='quantitative' value='0.96'>
+          <calculation class='tableau' formula='0.96' />
+          <range granularity='0.01' max='1.0' min='0.0' />
+        </column>
+        <column alias='Danceability' caption='Select Category 2' datatype='integer' name='[Select Category 1 (copy)_718042668422918145]' param-domain-type='list' role='measure' type='quantitative' value='2'>
+          <calculation class='tableau' formula='2' />
+          <aliases>
+            <alias key='1' value='Acousticness' />
+            <alias key='2' value='Danceability' />
+            <alias key='3' value='Energy' />
+            <alias key='4' value='Instrumental' />
+            <alias key='5' value='Liveness' />
+            <alias key='6' value='Loudness' />
+            <alias key='7' value='Speechness' />
+            <alias key='8' value='Tempo' />
+            <alias key='9' value='Time Signature' />
+          </aliases>
+          <members>
+            <member alias='Acousticness' value='1' />
+            <member alias='Danceability' value='2' />
+            <member alias='Energy' value='3' />
+            <member alias='Instrumental' value='4' />
+            <member alias='Liveness' value='5' />
+            <member alias='Loudness' value='6' />
+            <member alias='Speechness' value='7' />
+            <member alias='Tempo' value='8' />
+            <member alias='Time Signature' value='9' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <datasource-dependencies datasource='federated.1pmx3jm0kou1cr102lvtl11xficx'>
+        <column caption='Instrumental (bin)' datatype='integer' name='[Instrumental (bin)]' role='dimension' type='ordinal'>
+          <calculation class='bin' decimals='-2' formula='[Instrumental]' peg='0' size='0.04' />
+        </column>
+        <column datatype='real' name='[Instrumental]' role='measure' type='quantitative' />
+        <column-instance column='[Instrumental (bin)]' derivation='None' name='[none:Instrumental (bin):ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98400' id='10' param='horz' type-v2='layout-flow' w='98934' x='533' y='800'>
+            <zone h='98400' id='5' param='vert' type-v2='layout-flow' w='96801' x='533' y='800'>
+              <zone fixed-size='141' h='14900' id='7' is-fixed='true' type-v2='title' w='96135' x='866' y='1300'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#000000' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='776' h='77600' id='15' is-fixed='true' param='horz' type-v2='layout-flow' w='96135' x='866' y='16200'>
+                <zone fixed-size='982' h='77600' id='17' is-fixed='true' param='vert' type-v2='layout-flow' w='96135' x='866' y='16200'>
+                  <zone fixed-size='370' h='37000' id='20' is-fixed='true' param='horz' type-v2='layout-flow' w='96135' x='866' y='16200'>
+                    <zone h='37000' id='21' name='Music Classification' w='16800' x='866' y='16200'>
+                      <layout-cache cell-count-w='25' minheight='199' type-h='scalable' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='37000' id='22' name='Acousticness' w='16800' x='17666' y='16200'>
+                      <layout-cache cell-count-w='25' minheight='199' type-h='scalable' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='37000' id='23' name='Liveness' w='16800' x='34466' y='16200'>
+                      <layout-cache cell-count-w='25' minheight='157' type-h='scalable' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='37000' id='24' name='Speechiness' w='14112' x='51266' y='16200'>
+                      <layout-cache cell-count-w='21' minheight='157' type-h='scalable' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='37000' id='25' name='Instrumental Music' w='16800' x='65378' y='16200'>
+                      <layout-cache cell-count-w='25' minheight='199' type-h='scalable' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='37000' id='27' name='Danceability' w='14784' x='82178' y='16200'>
+                      <layout-cache cell-count-w='22' minheight='157' type-h='scalable' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='8300' id='31' mode='slider' param='[Parameters].[Cut off Category 1 (copy)_718042668424749060]' type-v2='paramctrl' w='96135' x='866' y='53200'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone h='6000' id='32' mode='compact' param='[Parameters].[Select Category 1 (copy)_718042668422918145]' type-v2='paramctrl' w='96135' x='866' y='61500'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#01fec7' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='5' />
+                <format attr='margin' value='0' />
+                <format attr='background-color' value='#000000' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='32' h='98400' id='9' is-fixed='true' param='vert' type-v2='layout-flow' w='2133' x='97334' y='800'>
+              <zone h='74200' id='26' name='Instrumental Music' param='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Instrumental (bin):ok]' type-v2='filter' w='2133' x='97334' y='800'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#01fec7' fontname='Tableau Bold' fontsize='36'>Spotify</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#b4b4b4' fontname='Tableau Bold' fontsize='24'>Music Classification and Personalisation</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='2000' minheight='2000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='34' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98400' id='33' param='vert' type-v2='layout-flow' w='98934' x='533' y='800'>
+                <zone fixed-size='141' h='14900' id='7' type-v2='title' w='96135' x='866' y='1300'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#000000' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37000' id='21' is-fixed='true' name='Music Classification' w='16800' x='866' y='16200'>
+                  <layout-cache cell-count-w='25' minheight='199' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37000' id='22' is-fixed='true' name='Acousticness' w='16800' x='17666' y='16200'>
+                  <layout-cache cell-count-w='25' minheight='199' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37000' id='23' is-fixed='true' name='Liveness' w='16800' x='34466' y='16200'>
+                  <layout-cache cell-count-w='25' minheight='157' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37000' id='24' is-fixed='true' name='Speechiness' w='14112' x='51266' y='16200'>
+                  <layout-cache cell-count-w='21' minheight='157' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='74200' id='26' mode='checkdropdown' name='Instrumental Music' param='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Instrumental (bin):ok]' type-v2='filter' w='2133' x='97334' y='800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37000' id='25' is-fixed='true' name='Instrumental Music' w='16800' x='65378' y='16200'>
+                  <layout-cache cell-count-w='25' minheight='199' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37000' id='27' is-fixed='true' name='Danceability' w='14784' x='82178' y='16200'>
+                  <layout-cache cell-count-w='22' minheight='157' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8300' id='31' mode='slider' param='[Parameters].[Cut off Category 1 (copy)_718042668424749060]' type-v2='paramctrl' w='96135' x='866' y='53200'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6000' id='32' mode='compact' param='[Parameters].[Select Category 1 (copy)_718042668422918145]' type-v2='paramctrl' w='96135' x='866' y='61500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F5E756AB-B176-41EF-B149-7F8AA03255E6}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#01fec7' fontname='Tableau Bold' fontsize='36'>Spotify</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#898989' fontname='Tableau Semibold' fontsize='24'>Music Classification and Personalization</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='2000' maxwidth='2000' minheight='2000' minwidth='2000' sizing-mode='fixed' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Cut off Category 2' datatype='real' name='[Cut off Category 1 (copy)_718042668424749060]' param-domain-type='range' role='measure' type='quantitative' value='0.96'>
+          <calculation class='tableau' formula='0.96' />
+          <range granularity='0.01' max='1.0' min='0.0' />
+        </column>
+        <column alias='Energy' caption='Select Category 1' datatype='integer' name='[Parameter 1]' param-domain-type='list' role='measure' type='quantitative' value='3'>
+          <calculation class='tableau' formula='3' />
+          <aliases>
+            <alias key='1' value='Acousticness' />
+            <alias key='2' value='Danceability' />
+            <alias key='3' value='Energy' />
+            <alias key='4' value='Instrumental' />
+            <alias key='5' value='Liveness' />
+            <alias key='6' value='Loudness' />
+            <alias key='7' value='Speechness' />
+            <alias key='8' value='Tempo' />
+            <alias key='9' value='Time Signature' />
+          </aliases>
+          <members>
+            <member alias='Acousticness' value='1' />
+            <member alias='Danceability' value='2' />
+            <member alias='Energy' value='3' />
+            <member alias='Instrumental' value='4' />
+            <member alias='Liveness' value='5' />
+            <member alias='Loudness' value='6' />
+            <member alias='Speechness' value='7' />
+            <member alias='Tempo' value='8' />
+            <member alias='Time Signature' value='9' />
+          </members>
+        </column>
+        <column caption='Cut off Category 1' datatype='real' name='[Parameter 2]' param-domain-type='range' role='measure' type='quantitative' value='0.15'>
+          <calculation class='tableau' formula='0.15' />
+          <range granularity='0.01' max='1.0' min='0.0' />
+        </column>
+        <column alias='Danceability' caption='Select Category 2' datatype='integer' name='[Select Category 1 (copy)_718042668422918145]' param-domain-type='list' role='measure' type='quantitative' value='2'>
+          <calculation class='tableau' formula='2' />
+          <aliases>
+            <alias key='1' value='Acousticness' />
+            <alias key='2' value='Danceability' />
+            <alias key='3' value='Energy' />
+            <alias key='4' value='Instrumental' />
+            <alias key='5' value='Liveness' />
+            <alias key='6' value='Loudness' />
+            <alias key='7' value='Speechness' />
+            <alias key='8' value='Tempo' />
+            <alias key='9' value='Time Signature' />
+          </aliases>
+          <members>
+            <member alias='Acousticness' value='1' />
+            <member alias='Danceability' value='2' />
+            <member alias='Energy' value='3' />
+            <member alias='Instrumental' value='4' />
+            <member alias='Liveness' value='5' />
+            <member alias='Loudness' value='6' />
+            <member alias='Speechness' value='7' />
+            <member alias='Tempo' value='8' />
+            <member alias='Time Signature' value='9' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98700' id='17' param='horz' type-v2='layout-flow' w='98700' x='650' y='650'>
+            <zone h='98700' id='11' param='vert' type-v2='layout-flow' w='90700' x='650' y='650'>
+              <zone h='8600' id='13' type-v2='title' w='90700' x='650' y='650'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='90100' id='8' param='vert' type-v2='layout-flow' w='90700' x='650' y='9250'>
+                <zone h='90100' id='5' param='vert' type-v2='layout-flow' w='90700' x='650' y='9250'>
+                  <zone h='90100' id='6' type-v2='layout-basic' w='90700' x='650' y='9250'>
+                    <zone h='90100' id='9' type-v2='layout-basic' w='90700' x='650' y='9250'>
+                      <zone h='90100' id='12' type-v2='layout-basic' w='90700' x='650' y='9250'>
+                        <zone h='90100' id='14' param='horz' type-v2='layout-flow' w='90700' x='650' y='9250'>
+                          <zone h='90100' id='15' name='Artist Segmentation' w='90700' x='650' y='9250'>
+                            <layout-cache fixed-size-w='1807' type-h='fixed' type-w='fixed' />
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98700' id='16' is-fixed='true' param='vert' type-v2='layout-flow' w='8000' x='91350' y='650'>
+              <zone h='3000' id='18' mode='compact' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='8000' x='91350' y='650'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4150' id='19' mode='slider' param='[Parameters].[Parameter 2]' type-v2='paramctrl' w='8000' x='91350' y='3650'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4150' id='20' mode='slider' param='[Parameters].[Cut off Category 1 (copy)_718042668424749060]' type-v2='paramctrl' w='8000' x='91350' y='7800'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='3000' id='21' mode='compact' param='[Parameters].[Select Category 1 (copy)_718042668422918145]' type-v2='paramctrl' w='8000' x='91350' y='11950'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#01fec7' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='5' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#000000' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#01fec7' fontname='Tableau Bold' fontsize='36'>Spotify</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#898989' fontname='Tableau Semibold' fontsize='24'>Music Classification and Personalization</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='99200' id='22' param='vert' type-v2='layout-flow' w='99200' x='400' y='400'>
+                <zone h='8600' id='13' type-v2='title' w='90700' x='650' y='650'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3000' id='18' mode='compact' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='8000' x='91350' y='650'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4150' id='19' mode='slider' param='[Parameters].[Parameter 2]' type-v2='paramctrl' w='8000' x='91350' y='3650'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4150' id='20' mode='slider' param='[Parameters].[Cut off Category 1 (copy)_718042668424749060]' type-v2='paramctrl' w='8000' x='91350' y='7800'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='90100' id='15' is-fixed='true' name='Artist Segmentation' w='90700' x='650' y='9250'>
+                  <layout-cache fixed-size-w='1807' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='3000' id='21' mode='compact' param='[Parameters].[Select Category 1 (copy)_718042668422918145]' type-v2='paramctrl' w='8000' x='91350' y='11950'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#01fec7' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='5' />
+                <format attr='margin' value='8' />
+                <format attr='background-color' value='#000000' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F3919174-EB65-4554-9627-D5D18A277A7A}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='75'>
+    <window class='worksheet' name='Music Classification'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Energy (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{3CEC042A-4479-466C-81D1-2325E2B401C1}' />
+    </window>
+    <window class='worksheet' name='Acousticness'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Acousticness (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{35E17986-077A-4082-8B68-4FCB3D8C48A3}' />
+    </window>
+    <window class='worksheet' name='Liveness'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Liveness (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{21180E9A-C82D-42A2-8721-2D3E27D8FF36}' />
+    </window>
+    <window class='worksheet' name='Speechiness'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='horizontal'>
+              <node-reference>
+                <fields>
+                  <field>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Speechless (bin):ok]</field>
+                </fields>
+                <multibucket>
+                  <bucket>4</bucket>
+                </multibucket>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Speechless (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{33CB6D02-23D3-4C29-9D53-16206A3F1A3E}' />
+    </window>
+    <window class='worksheet' name='Instrumental Music'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Instrumental (bin):ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Instrumental (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{33B3B660-D580-4BD9-8D82-1E638397301C}' />
+    </window>
+    <window class='worksheet' name='Danceability'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Danceability (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{E94183B9-5FCC-4174-944C-36FD566C65A8}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Artist Segmentation'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card mode='slider' param='[Parameters].[Parameter 2]' type='parameter' />
+            <card mode='slider' param='[Parameters].[Cut off Category 1 (copy)_718042668424749060]' type='parameter' />
+            <card mode='compact' param='[Parameters].[Select Category 1 (copy)_718042668422918145]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Artist:nk]</field>
+            <field>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Calculation_718042668424962053:nk]</field>
+            <field>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Calculation_718042668425445382:qk]</field>
+            <field>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Song_title:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{208B0BFC-2B97-48E0-BBE0-DD5DB9964A73}' />
+    </window>
+    <window class='worksheet' name='Preferred Artist'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:AdhocCluster:1:ok]' show-morefewerbutton='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:AdhocCluster:1:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:AdhocCluster:1:ok]</field>
+            <field>[federated.1pmx3jm0kou1cr102lvtl11xficx].[none:Artist:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{62051AF9-1FBC-467E-BAF9-5593EAE1AE74}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Acousticness'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Danceability'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Instrumental Music'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Liveness'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Music Classification'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Speechiness'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{4E6DCCBF-C7E1-4193-993F-1E959B4C1EBD}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Artist Segmentation' />
+      </viewpoints>
+      <active id='15' />
+      <simple-id uuid='{1AA26980-788D-413B-A3A1-39253236E42A}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Acousticness' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAEQ0lEQVR4nO3cP2sUCRzG8d8sVnvhEm0WlLgoKUSEBAQbsbiXIIiv5+or752IlUU4rhL0
+      II2InAZRFk4SIWFlo4lZ56oT4l5xW8wu5/P5dLNM8TRfZmb/NW3btgWBmqZpesseAcskAKIJ
+      gGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKKd+/aFly9f1s7OTn38+LHu3LlTV69e
+      XcYuWIiZK8Du7m7dvXu3hsNhvXr1ahmbYGGab38Qs7u7W8+fP69bt25VVdVgMFjKMOjav/4g
+      ZjKZ1NbWVm1vb9eLFy+WsQsWZiaA169f19OnT+vevXt1cnKyjE2wMDO3QAcHB/Xu3btaX1+v
+      /f39unLlyrK2Qaeapmlm3gXa2dmp8Xhcz549q36/LwC+azMBHB8f18rKSvV6vZpMJsvYBAsz
+      cwt0cnJSh4eHNZlM6vz587W2trasbdCppmmaMwHcb/+sw5qeOWmr+vVLM1z4OOjazDPA7zWu
+      /To9c9K0/G8W3y/fBSKaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJ
+      gGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCi
+      CYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYA
+      ogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgm
+      AKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCI
+      JgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoA
+      iCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCa
+      AIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIg
+      mgCIJgCiCYBo5+Y5+f379/Xo0aNaX1+va9eu1Xg8ro2Nja62QefmugJMJpO6efNm9fv9evz4
+      cX3+/LmrXbAQc10BLl++XKPRqDY2Nmo6ndbFixe72gULMVcAe3t79eTJk9rb26tLly7VcDis
+      1dXVrrZB5+YK4OjoqDY3N+vDhw+1srJSR0dHXe2ChZjrGWA4HNbp6WnduHGjLly4UIPBoKtd
+      sBBzBfDmzZsajUb14MGD+vTpU719+7arXbAQcwWwurpaa2trdfv27Xr48GFXm2BhmrZt238O
+      Bu0ftV+nZ074qX6s7eb61+MvX75Ur9er6XRaTdNUr+ezNP6fmqZp/vND8K/tX/Vzjaqaqmrr
+      67Xjt/Z6bTY/dLMQOvY342O75nV58poAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Danceability' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      Op+1AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 2' width='192'>
+      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
+      AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Instrumental Music' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAADN0lEQVR4nO3bsUpedxzH4d/bIGYIwSlDSodiwc1b6G31CnpFuQChIBHqYFASNZAM6hAI
+      HVqCYPV0KxRDISBvCJ/n2c4Z/nyXD+fA4ayWZVkGor772gPgaxIAaQIgTQCkCYA0AZAmANIE
+      QJoASBMAaQIgTQCkCYC0ewEsyzLX19fz4cOH/9w7Pz+fZVnm1atXc3V1NcuyzOHh4Xz8+HGt
+      g+EhffYJ8ObNmzk+Pv73+t27d/PixYt5//793N7ezsuXL2d/f3+eP38+m5ubaxsLD+1eAKvV
+      anZ3d+fRo0czM3N3dzevX7+e7e3tefLkyZycnMzNzc1cXFzM+fn57O3trXszPJjPvgIdHBzM
+      0dHRXFxczOnp6Wxtbc3Z2dm8fft2nj59Ojc3N7OzszOfPn3yBOCbtvq/P8IuLy/n2bNns7Gx
+      sc5NsDb3Avh9+Wv+mL+/6JCf5vH8uHr8oMNgHe4F8PNyMr/Nn190yK/zw/yy+v5Bh8E6+A5A
+      mgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJ
+      gDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBI
+      EwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQB
+      kCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBp
+      AiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA
+      0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBN
+      AKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRA
+      mgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJ
+      gDQBkCYA0gRAmgBIEwBp/wDS7H255RJsEwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Liveness' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAADgklEQVR4nO3bMWtdBRjH4fe2tWCwZLBg6NihkMXdwdUP43fwGzi5dXB0c7K7uHQLQiiB
+      SqGkhKaLpqS0VIzm+AHEgjExuf6eZ3/hv/w458C9q2VZloGoa5c9AC6TAEgTAGkCIE0ApAmA
+      NAGQJgDSBECaAEgTAGkCIE0ApK19AMuyzJMnT+bp06ezLMscHBzMsizz/PnzefTo0fixK++y
+      9gEcHh7O0dHR3L59ew4PD+fhw4dzeno6Ozs7c3JyMvv7+5c9kSts7QPY39+fo6OjefDgwdy5
+      c2e2trZmtVrN27dv5/Hjx7O5uXnZE7nC1j6A7e3tef369dy8eXOePXs2u7u7s7e3N8uyzMbG
+      xhwfH1/2RK6wlX+EUXbjsgf8UyfL6fwwr858/8ncmg9W189xEets7Z4AL5ff58PZOfP93nw8
+      26uNc1zEOlv7bwD4NwRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA
+      0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBN
+      AKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRA
+      mgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJ
+      gDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBI
+      EwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpNy57wFXw7fLL
+      HM8fZ7r9dG7NvdX757yI/8qFB7C7vJkv58WZbjfm2txf3T3nRX/1xRzMT/PrmW6/nrtzbwSw
+      ri48gMP5bb6Zn890uznX5/5cfAB0+QYgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAm
+      ANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIg
+      TQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaTcue8D/0VfLi/l+Xp3p
+      9rPZnM9XW+e8iL8jgAvw47yZ7+blmW4/mvfOeQ3v4hWINAGQ9iel/n+VLOr/OgAAAABJRU5E
+      rkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Music Classification' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Preferred Artist' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Speechiness' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAETUlEQVR4nO3dwY7iRhhF4VsujE0P3RrUD5AniOb9XyWbKLtsulvQmMLYrppFkpYmmQUS
+      Ycxwz7fDskr/wkdlg5BDKaUIMFXNPQAwJwKANQKANQKANQKANQKANQKANQKANQKANQKANQKA
+      NQKANQKAtcXcA0hSKUVd12maJq1WK43jqBCC2rbV4XBQ27aKMc49Ju7QTewAIQSt12vVda2c
+      s+q61vF41G6302Kx0Ha7nXtE3KmbCED6axfo+15t22ocRw3DoJyzlsulQghzj4c7dTMB9H2v
+      pmmUc9bpdFKMUXVd6+3tTVV1M2PizgT+EQZnszwE76dBoy7v7rGqFbk9wgVmCeD3oVOXx4vX
+      +bX9rE/hJr7Iwk+Km2tYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYO+v1KqUUpZQ0jqPW67V2u53qulZVVTqdTmrbVk3TXHtW4H939g6w3+9VVZUOh4MeHh6+
+      ufD7vr/mjMDVnB1AjFFVVSml9PHe3lKKhmG42nDAtZ0dQF3X6vtem81G+/1edV0rpaScsxYL
+      XlSHn9NZV24IQU9PTx+fN5vN1QYCfqT/BFBK0R9Dd/HCQUG/LD9dvA5wTd/dAf4cjxcvHCQC
+      wM3jdwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBY
+      IwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYIwBYswlg
+      miallFRKUSlFwzColKLj8aic89zjYSY2AfR9r1KKuq5TSkmvr6/quk45Z22327nHw0xsAlgu
+      l0opqWkaDcOg5XKpcRy1Wq3mHg0zsgng5eVFbdt+3O4cDgfFGPX+/q4QwszTYS6LuQf4UZ6f
+      n1VKUYxRTdPo8fFRIQRN06QY49zjYSZ3GUDKk4rKtwcrSQoalKV/HnrL38fLpH+fLkltiKrY
+      He7aXQbwW79TKtPF63xpN1oFdod7ZvMMAHwPAcAaAcAaAcAaAcAaAcAaAcAaAcAaAcAaAcAa
+      AcAaAcAaAcAaAcAaAcAaAcAaAcAaAcDaVyS24IPwvrqvAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
